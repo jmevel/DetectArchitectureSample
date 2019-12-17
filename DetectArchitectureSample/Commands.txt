@@ -1,0 +1,11 @@
+﻿dotnet publish -r win-x86 -c Release /p:PublishSingleFile=true /p:PublishTrimmed=true /p:Platform=x86
+
+dotnet publish -r linux-arm -c Release /p:PublishSingleFile=true /p:PublishTrimmed=true /p:Platform=arm
+
+
+
+
+
+dotnet publish -r win-x64 -c Release /p:PublishSingleFile=true /p:PublishTrimmed=true /p:Platform=x64
+
+dotnet publish -r linux-arm64 -c Release /p:PublishSingleFile=true /p:PublishTrimmed=true /p:Platform=arm64
