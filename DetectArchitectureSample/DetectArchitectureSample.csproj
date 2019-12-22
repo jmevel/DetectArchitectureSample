@@ -7,11 +7,7 @@
     <Platforms>x64;x86;arm64;arm86</Platforms>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Platform)'=='x64'">
-    <DefineConstants>$(DefineConstants);Is64Bit</DefineConstants>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Platform)'=='arm64'">
+  <PropertyGroup Condition="$(Platform)=='x64' Or $(Platform)=='arm64'">
     <DefineConstants>$(DefineConstants);Is64Bit</DefineConstants>
   </PropertyGroup>
 
